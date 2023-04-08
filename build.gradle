@@ -1,0 +1,25 @@
+
+plugins {
+    id 'scala'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation 'org.scala-lang:scala3-library_3:3.0.1'
+    implementation 'commons-collections:commons-collections:3.2.2'
+    testImplementation 'org.scalatest:scalatest_3:3.2.9'
+    implementation 'com.google.guava:guava:31.1-jre'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.scalatestplus:junit-4-13_2.13:3.2.2.0'
+
+    testRuntimeOnly 'org.scala-lang.modules:scala-xml_2.13:1.2.0'
+}
+
+application {
+    mainClass = 'demo.App'
+}
